@@ -6,11 +6,11 @@
   <title>廖老师</title>
   <style>
     @font-face {
-  font-family: 'LXGW';
-  src: url('assets/fonts/LXGWWenKaiMonoTC-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+      font-family: 'LXGW';
+      src: url('assets/fonts/LXGWWenKaiMonoTC-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
     body {
       font-family: LXGW, sans-serif;
       background: #f4f4f4;
@@ -18,11 +18,19 @@
       padding: 0;
       text-align: center;
     }
+
     header {
-      background-color: #24292e;
-      color: white;
-      padding: 1em 0;
+      height: 10px;
+      background: linear-gradient(90deg, #ff0080, #7928ca, #2afadf);
+      background-size: 300% 100%;
+      animation: glowbar 6s linear infinite;
+      border-bottom: 1px solid #ccc;
     }
+    @keyframes glowbar {
+      0%   { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
     main {
       padding: 2em;
     }
@@ -41,27 +49,24 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My GitHub Page</h1>
-  </header>
+  <header></header>
   <main>
-   <h2>4M 华文</h2>
-<ul style="list-style: none; padding: 0;">
-  <li>
-    📄 第十三课 猜字谜 - 
-    <a href="assets/BC/四年级华文 第十三课 猜字谜.odp" download>下载</a>
-    <span style="color: gray;">(31-07-2025)</span>
-  </li>
-  <li>
-    📄 成语 - 
-    <a href="assets/BC/成语.odp" download>下载</a>
-    <span style="color: gray;">(2025-08-04)</span>
-  </li>
-</ul>
-
+    <h2>4M 华文</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li>
+        📄 第十三课 猜字谜 - 
+        <a href="assets/BC/四年级华文 第十三课 猜字谜.odp" download>下载</a>
+        <span style="color: gray;">(31-07-2025)</span>
+      </li>
+      <li>
+        📄 成语 - 
+        <a href="assets/BC/成语.odp" download>下载</a>
+        <span style="color: gray;">(2025-08-04)</span>
+      </li>
+    </ul>
   </main>
   <footer>
-     2025 廖老师
+    2025 廖老师
   </footer>
 </body>
 </html>
