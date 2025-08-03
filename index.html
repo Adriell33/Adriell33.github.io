@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,12 +11,13 @@
       font-weight: normal;
       font-style: normal;
     }
+
     body {
       font-family: LXGW, sans-serif;
       background: #f4f4f4;
       margin: 0;
       padding: 0;
-      text-align: center;
+      color: #333;
     }
 
     header {
@@ -26,23 +27,63 @@
       animation: glowbar 6s linear infinite;
       border-bottom: 1px solid #ccc;
     }
+
     @keyframes glowbar {
       0%   { background-position: 0% 50%; }
       100% { background-position: 100% 50%; }
     }
 
     main {
+      max-width: 600px;
+      margin: 3em auto;
       padding: 2em;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.08);
     }
+
+    h2 {
+      text-align: left;
+      color: #444;
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: left;
+      margin: 0 0 1.5em 0;
+    }
+
+    li {
+      padding: 0.6em 0;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
     a {
-      color: #0366d6;
+      color: #1a73e8;
       text-decoration: none;
+      font-weight: bold;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
+    .date {
+      color: #999;
+      font-size: 0.85em;
+      margin-left: 10px;
+    }
+
     footer {
-      margin-top: 4em;
+      text-align: center;
+      margin: 4em 0 2em;
       font-size: 0.9em;
       color: #888;
     }
@@ -51,22 +92,37 @@
 <body>
   <header></header>
   <main>
-    <h2>4M 华文</h2>
-    <ul style="list-style: none; padding: 0;">
+    <h2>📘 4M 华文</h2>
+    <ul>
       <li>
-        📄 第十三课 猜字谜 - 
-        <a href="assets/BC/四年级华文 第十三课 猜字谜.odp" download>下载</a>
-        <span style="color: gray;">(31-07-2025)</span>
+        📄 第十三课 猜字谜
+        <span>
+          <a href="assets/BC/四年级华文 第十三课 猜字谜.odp" download>下载</a>
+          <span class="date">(31-07-2025)</span>
+        </span>
       </li>
       <li>
-        📄 成语 - 
-        <a href="assets/BC/成语.odp" download>下载</a>
-        <span style="color: gray;">(2025-08-04)</span>
+        📄 成语
+        <span>
+          <a href="assets/BC/成语.odp" download>下载</a>
+          <span class="date">(04-08-2025)</span>
+        </span>
+      </li>
+    </ul>
+
+    <h2>🔬 4K 科学</h2>
+    <ul>
+      <li>
+        🧪 第7课 能
+        <span>
+          <a href="assets/SN/第7课.pdf" download>下载</a>
+          <span class="date">(01-08-2025)</span>
+        </span>
       </li>
     </ul>
   </main>
   <footer>
-    2025 廖老师
+    © 2025 廖老师
   </footer>
 </body>
 </html>
