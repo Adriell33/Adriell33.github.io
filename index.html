@@ -99,11 +99,26 @@
   </style>
 </head>
   <script>
-  function showCat() {
+  const imgA = "assets/img/cat.gif";   // 第一张图（GIF）
+  const imgB = "assets/img/kitten.png"; // 第二张图（PNG 或 GIF）
+
+  let isVisible = false;
+  let isA = true;
+
+  function toggleImage() {
     const cat = document.getElementById("cat");
-    cat.style.display = (cat.style.display === "none") ? "block" : "none";
+    isVisible = !isVisible;
+
+    if (isVisible) {
+      cat.style.display = "block";
+      cat.src = isA ? imgA : imgB;
+      isA = !isA; 
+    } else {
+      cat.style.display = "none";
+    }
   }
 </script>
+
 
 <body>
   <header></header>
@@ -137,11 +152,12 @@
       </li>
     </ul>
   </main>
-  <img id="cat" src="https://cataas.com/cat/says/你好!" 
-     alt="隐藏的猫咪" 
-     style="display: none; width: 160px; position: fixed; bottom: 20px; right: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" />
+ <img id="cat" 
+     src="assets/cat.gif"
+     alt="隐藏的猫咪"
+     style="display: none; width: 180px; position: fixed; bottom: 20px; right: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" />
 
-  <footer onclick="showCat()">
+  <footer onclick="toggleImage()">
      Made with ❤️ by 廖老师 - 2025
   </footer>
 </body>
