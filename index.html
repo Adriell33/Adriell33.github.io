@@ -98,6 +98,13 @@
     }
   </style>
 </head>
+  <script>
+  function showCat() {
+    const cat = document.getElementById("cat");
+    cat.style.display = (cat.style.display === "none") ? "block" : "none";
+  }
+</script>
+
 <body>
   <header></header>
   <main>
@@ -130,7 +137,11 @@
       </li>
     </ul>
   </main>
-  <footer>
+  <img id="cat" src="https://cataas.com/cat/says/你好!" 
+     alt="隐藏的猫咪" 
+     style="display: none; width: 160px; position: fixed; bottom: 20px; right: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" />
+
+  <footer onclick="showCat()">
      Made with ❤️ by 廖老师 - 2025
   </footer>
 </body>
