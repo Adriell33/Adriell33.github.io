@@ -96,6 +96,27 @@
       font-size: 0.9em;
       color: #888;
     }
+    .file-list {
+  max-height: 240px;       /* 控制最多高度，可自由调整 */
+  overflow-y: auto;
+  padding-right: 8px;
+  margin-bottom: 2em;
+}
+
+/* 可选：自定义滚动条样式（美观） */
+.file-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.file-list::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.file-list::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
   </style>
 </head>
   <script>
