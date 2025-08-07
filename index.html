@@ -180,12 +180,42 @@
           <span class="date">(01-08-2025)</span>
         </span>
       </li>
+     <li style="flex-direction: column; align-items: flex-start;">
+  <div style="display: flex; justify-content: space-between; width: 100%; flex-wrap: wrap;">
+    <span>🧪 第8课：材料</span>
+    <span>
+      <a href="javascript:void(0)" onclick="toggleLesson8()" id="toggleLink8">展开</a>
+      <span class="date">(07-08-2025)</span>
+    </span>
+  </div>
+
+  <div id="lesson8Content" style="display: none; margin-top: 1em;">
+    <iframe style="width: 550px; height: 350px; border-radius: 8px;" src="https://online.anyflip.com/mtdky/gden/index.html" seamless scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen></iframe>
+
+    <iframe style="width: 400px; height: 250px; border-radius: 8px; margin-top: 1em;" src="https://online.anyflip.com/mtdky/gden/index.html" seamless scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen></iframe>
+  </div>
+</li>
+
     </ul></div>
   </main>
  <img id="cat" 
      src="assets/cat.gif"
      alt="隐藏的猫咪"
      style="display: none; width: 180px; position: fixed; bottom: 20px; right: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" />
+<script>
+  function toggleLesson8() {
+    const content = document.getElementById("lesson8Content");
+    const link = document.getElementById("toggleLink8");
+
+    if (content.style.display === "none" || content.style.display === "") {
+      content.style.display = "block";
+      link.textContent = "收起";
+    } else {
+      content.style.display = "none";
+      link.textContent = "展开";
+    }
+  }
+</script>
 
   <footer onclick="toggleImage()">
      Made with ❤️ by 廖老师 - 2025
