@@ -153,6 +153,29 @@
           <span class="date">(07-08-2025)</span>
         </span>
       </li>     
+        <li style="flex-direction: column; align-items: flex-start;">
+  <div style="display: flex; justify-content: space-between; width: 100%; flex-wrap: wrap;">
+    <span>📄 成语二</span>
+    <span>
+      <a href="javascript:void(0)" onclick="toggleContent('chengyu2Content', 'toggleChengyu2Link')" id="toggleChengyu2Link">展开</a>
+      <span class="date">(08-08-2025)</span>
+    </span>
+  </div>
+
+  <div id="chengyu2Content" style="display: none; margin-top: 1em;">
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR8JgqHTm7HxmapTWOLZbXSxVpc7Yj7kCfoD5logXHlzBcsH_HnF3fV67rJO52GdtMdXfiK798SKR5I/pubembed?start=false&loop=false&delayms=3000"
+      frameborder="0"
+      width="560"
+      height="315"
+      allowfullscreen="true"
+      mozallowfullscreen="true"
+      webkitallowfullscreen="true"
+      style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    </iframe>
+  </div>
+</li>
+
+
     </ul>
     </div>
     <h2>🔬 4K 科学</h2>
@@ -165,18 +188,25 @@
           <span class="date">(01-08-2025)</span>
         </span>
       </li>
-     <li style="flex-direction: column; align-items: flex-start;">
+    <li style="flex-direction: column; align-items: flex-start;">
   <div style="display: flex; justify-content: space-between; width: 100%; flex-wrap: wrap;">
     <span>🧪 第8课：材料</span>
     <span>
-      <a href="javascript:void(0)" onclick="toggleLesson8()" id="toggleLink8">展开</a>
+      <a href="javascript:void(0)" onclick="toggleContent('lesson8Content', 'toggleLink8')" id="toggleLink8">展开</a>
       <span class="date">(08-08-2025)</span>
     </span>
   </div>
 
   <div id="lesson8Content" style="display: none; margin-top: 1em;">
-    <iframe style="width: 200px; height: 100px; border-radius: 8px; margin-top: 1em;" src="https://online.anyflip.com/mtdky/ilkv/index.html" seamless scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen></iframe>
-    <iframe style="width: 200px; height: 100px; border-radius: 8px; margin-top: 1em;" src="https://online.anyflip.com/mtdky/gden/index.html" seamless scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen></iframe>
+    <iframe style="width: 200px; height: 100px; border-radius: 8px; margin-top: 1em;"
+      src="https://online.anyflip.com/mtdky/ilkv/index.html"
+      scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen>
+    </iframe>
+
+    <iframe style="width: 200px; height: 100px; border-radius: 8px; margin-top: 1em;"
+      src="https://online.anyflip.com/mtdky/gden/index.html"
+      scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen>
+    </iframe>
   </div>
 </li>
 
@@ -211,9 +241,10 @@
     }
   }
 
-  function toggleLesson8() {
-    const content = document.getElementById("lesson8Content");
-    const link = document.getElementById("toggleLink8");
+
+  function toggleContent(id, linkId) {
+    const content = document.getElementById(id);
+    const link = document.getElementById(linkId);
 
     if (content.style.display === "none" || content.style.display === "") {
       content.style.display = "block";
@@ -223,6 +254,8 @@
       link.textContent = "展开";
     }
   }
+
+
 </script>
 </body>
 </html>
